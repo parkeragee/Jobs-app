@@ -1,0 +1,37 @@
+<div class="container">
+	<form action="/job/create" method="post">
+	<label>Category</label>
+		<ul>
+			<li><input type="radio" name="category"> Design</li>
+			<li><input type="radio" name="category"> Development</li>
+			<li><input type="radio" name="category"> Admin</li>
+		</ul>
+		<br>
+		<label>Job title</label>
+		<input type="text" name="title" class="form-control">
+		<br>
+		<label>Job description</label>
+		<textarea rows="15" class="form-control editable"></textarea>
+		<br>
+		<label>How to apply</label>
+		<input type="text" name="applyInstructions" class="form-control">
+		<br>
+		<label>Location</label>
+		<input type="text" name="location" class="form-control">
+		<br>
+		<label>Company name</label>
+		<input type="text" name="company" class="form-control">
+		<br>
+		<label>URL</label>
+		<input type="text" name="url" class="form-control">
+		<br>
+		<label>Do you want to highlight your job post?</label>
+		<ul>
+			<li><input type="radio" name="highlighted"> Yes</li>
+			<li><input type="radio" name="highlighted"> No</li>
+		</ul>
+		<br>
+		<input type="hidden" name="description">
+		<input class="btn" type="submit" value="Preview job listing">
+	</form>
+</div>
